@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+    <destiny738.tistory.com.validation.ValidationEditText
+   		xmlns:destiny="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_background"
+        destiny:validationType="email" 
+        destiny:errorMessage="Input your email!! This is not email type."
+        destiny:errorFontColor="#708090"
+        destiny:errorIcon="@drawable/caution_icon" 
+        destiny:popupTop="-10dp"/>
+
+    <destiny738.tistory.com.validation.ValidationEditText
+   		xmlns:destiny="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text_background"
+        destiny:validationType="url" 
+        destiny:errorMessage="It is not URL address! You need to start http://~"
+        destiny:errorFontColor="#EE0011" 
+        destiny:errorIcon="@drawable/ic_launcher" />
+    
+    <destiny738.tistory.com.validation.ValidationEditText
+   		xmlns:destiny="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text_background"
+        destiny:validationType="number"
+        destiny:validationMinLength="8" 
+        destiny:validationMaxLength="20"
+        destiny:errorMessage="You input more than 8characters or smaller than 20characters."
+        destiny:errorFontColor="#EE0011" 
+        destiny:errorIcon="@drawable/ic_launcher" />
+    
+</LinearLayout>
